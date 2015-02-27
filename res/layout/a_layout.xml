@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AutoTextView="http://schemas.android.com/apk/res/com.jcl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+         android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+    	 android:textSize="50sp"
+    	 android:text="我是普通的TextView"
+        />
+    <com.jcl.view.AutoTextView
+         android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+   		 AutoTextView:maxTextSize="50sp"
+   		 android:id="@+id/auto"
+   		 android:textSize="50sp"
+   		 AutoTextView:minTextSize="1sp"
+   		 AutoTextView:isChangeHeight="true"
+   		 android:maxLines="1"
+    	 android:text="我是可以变化的AutoTextView"
+        />
+
+</LinearLayout>
